@@ -1,15 +1,15 @@
-# Project: practice2
+# Project: practice4
 # Makefile created by Embarcadero Dev-C++ 6.3
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "practice\ 2.o"
-LINKOBJ  = "practice 2.o"
+OBJ      = practice4.o
+LINKOBJ  = practice4.o
 LIBS     = -L"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/a/Desktop/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
-BIN      = practice2.exe
+BIN      = practice4.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 DEL      = C:\Users\a\Desktop\Dev-Cpp\devcpp.exe INTERNAL_DEL
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"practice\ 2.o": practice\ 2.c
-	$(CC) -c "practice 2.c" -o "practice 2.o" $(CFLAGS)
+practice4.o: practice4.c
+	$(CC) -c practice4.c -o practice4.o $(CFLAGS)
