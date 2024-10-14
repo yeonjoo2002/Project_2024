@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 	char comp;
 	
 	printf("Enter the calculate:");
-	scanf("%i""%c""%i", &num1, &comp, &num2);
+	scanf("%i %c %i", &num1, &comp, &num2);
 	
 	if (comp == '+')
 		printf("= %i", num1+num2);
