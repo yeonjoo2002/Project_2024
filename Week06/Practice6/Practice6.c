@@ -14,6 +14,8 @@ int main(int argc, char *argv[]) {
 		printf("Guess a number:");
 		scanf("%i", &num);
 		
+		i++;
+		
 		if (num>answer)
 			printf("High!\n");
 		
@@ -22,11 +24,8 @@ int main(int argc, char *argv[]) {
 			
 		else
 		{
-			i++;
 			break;
-		}
-			
-		i++;	
+		}	
 	}
 	
 	while (num!=answer);

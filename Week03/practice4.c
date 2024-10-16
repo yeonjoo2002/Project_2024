@@ -5,20 +5,16 @@
 
 int main(void) {
 	
-	int a;
-	int b;
+	int a,b;
+	float fa, fb;
 	
-	float a_f;
-	float b_f;
-	float output;
+	printf("enter two integers:");
+	scanf("%i %i", &a, &b);
 	
-	printf("enter two integers: ");
-	scanf("%i , %i", &a, &b);
+	fa = (float) a;
+	fb = (float) b;
 	
-	a_f = (float) a;
-	b_f = (float) b;
-	output = a_f / b_f;
+	printf("%f / %f = %f", fa,fb,fa/fb);
 	
-	printf("%f / %f = %f", a_f, b_f, output);
 	return 0;
 }

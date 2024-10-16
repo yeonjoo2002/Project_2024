@@ -6,18 +6,11 @@
 
 int main(void) {
 	
-    char inputChar;
-    char outputChar;
-    
-    printf("enter a character: ");
-    scanf(" %c", &inputChar); 
-
-    int asciiValue = (int) inputChar;  
-    int nextAsciiValue = asciiValue + 1;  
-    
-    outputChar = (char) nextAsciiValue;
-    
-    printf("The next character %c (%i) is %c (%i) \n", inputChar,asciiValue, outputChar, nextAsciiValue);
-
+	char c;
+	
+	printf("Enter a character:");
+	scanf("%c", &c);
+	
+	printf("the next character of %c (%i) is %c (%i)", c, c, c+1, c+1);
     return 0;
 }
