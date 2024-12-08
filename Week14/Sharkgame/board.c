@@ -41,7 +41,7 @@ void board_printBoardStatus(void)
 
 int board_initBoard(void)
 {
-    int i;
+    int i,j;
     
     //variable initialization
     for (i=0;i<N_BOARD;i++)
@@ -55,7 +55,18 @@ int board_initBoard(void)
 // ----- EX. 5 : shark ------------
 
     //coin allocation
-   
+   for (j = 0; j < N_COINPOS; j++) 
+    {
+        while (1) 
+        {
+            int pos = rand() % N_BOARD; 
+            if (board_coin[pos] == 0)  
+            {
+                board_coin[pos] = (rand() % MAX_COIN) + 1; 
+                break; 
+            }
+        }
+    }
     
     return N_COINPOS;
 }

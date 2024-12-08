@@ -218,12 +218,13 @@ int main(int argc, const char * argv[]) {
       if (player_position[turn] >= N_BOARD) {
             player_position[turn] = N_BOARD - 1;
             player_status[turn] = PLAYERSTATUS_END;
+            printf("%s reached the end!! (coin: %d)\n", player_name[turn], player_coin[turn]);
         }
           
        coinResult = board_getBoardCoin(player_position[turn]);
         if (coinResult > 0) {
             player_coin[turn] += coinResult;
-            printf("%s collected %d coin(s)!\n", player_name[turn], coinResult);
+            printf("-> Lucky! %s got %d coins!\n", player_name[turn], coinResult);
         }
         
          turn = (turn + 1) % N_PLAYER;
